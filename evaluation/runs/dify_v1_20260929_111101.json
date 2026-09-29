@@ -1,0 +1,122 @@
+{
+  "run_id": "dify_v1_20260929_111101",
+  "timestamp": "20260929_111101",
+  "product_name": "Dify",
+  "product_version": "v1",
+  "summary": {
+    "total_tests": 3,
+    "passed_tests": 1,
+    "failed_tests": 2,
+    "pass_rate": 0.3333
+  },
+  "test_cases": [
+    {
+      "test_id": "TC001",
+      "scenario": "fact_qa",
+      "question": "星河知识库助手的项目负责人是谁？",
+      "expected_facts": [
+        "林晓"
+      ],
+      "required_source": "sample_knowledge.pdf"
+    },
+    {
+      "test_id": "TC002",
+      "scenario": "fact_qa",
+      "question": "星河知识库助手支持哪些文件格式？",
+      "expected_facts": [
+        "PDF、TXT"
+      ],
+      "required_source": "sample_knowledge.pdf"
+    },
+    {
+      "test_id": "TC003",
+      "scenario": "missing_information",
+      "question": "星河知识库助手的年度营业收入是多少？",
+      "expected_facts": [],
+      "required_source": "sample_knowledge.pdf"
+    }
+  ],
+  "execution_results": [
+    {
+      "test_id": "TC001",
+      "execution_status": "success",
+      "question": "星河知识库助手的项目负责人是谁？",
+      "answer": "<think>\n<!--dify-deepseek-reasoning-->我们需要回答用户问题。需要严格根据知识检索节点提供的资料回答。但用户消息中“知识库检索内容：”后面是空的？ 它写的是“知识库检索内容：/” 可能没有提供任何检索内容。因此无法从当前知识库确定答案。需要明确说明无法从当前知识库确定答案。不能编造。可以请用户提供更多信息或检索结果。注意不要使用自身知识。最终用中文简洁回答。可以提到“当前提供的知识库检索内容为空/未包含相关信息”。如果有文档名称？没有。所以回答：无法从当前知识库确定“星河知识库助手”的项目负责人是谁。请补充相关文档或检索内容。确保不编造。\n</think>无法从当前知识库确定“星河知识库助手”的项目负责人是谁。\n\n当前提供的检索内容为空，未包含与该问题相关的文档或原文片段。请补充相关检索结果或文档依据后再查询。",
+      "references": [],
+      "elapsed_time": 4.65,
+      "message_id": "b3cdb6c2-2deb-4b19-bd07-a553de09e1f1",
+      "error_message": null
+    },
+    {
+      "test_id": "TC002",
+      "execution_status": "success",
+      "question": "星河知识库助手支持哪些文件格式？",
+      "answer": "<think>\n<!--dify-deepseek-reasoning-->我们需要回答用户问题：\"星河知识库助手支持哪些文件格式？\" 需要严格根据知识检索节点提供的资料。但这里给出的知识库检索内容是 \"/\"，似乎没有实际内容。可能意味着没有检索到相关内容？ 用户问题关于星河知识库助手支持哪些文件格式。知识库检索内容只有 \"/\"，没有资料。因此，根据规则，如果资料中没有答案，明确说明无法从当前知识库确定答案，不要编造。需要回答无法从当前知识库确定。可以说明检索到的知识库内容为空/仅有\"/\"，未包含相关说明。不要编造格式。最终用中文。\n</think>当前知识库检索内容中没有提供关于“星河知识库助手支持哪些文件格式”的资料，因此无法从当前知识库确定答案。",
+      "references": [],
+      "elapsed_time": 4.57,
+      "message_id": "bafc55a5-8b58-44f0-be4d-5411dfac47fb",
+      "error_message": null
+    },
+    {
+      "test_id": "TC003",
+      "execution_status": "success",
+      "question": "星河知识库助手的年度营业收入是多少？",
+      "answer": "<think>\n<!--dify-deepseek-reasoning-->我们需要回答用户问题。必须严格根据知识检索节点提供的资料。这里知识库检索内容为空：显示“知识库检索内容：/” 没有资料。需要说明无法从当前知识库确定答案。不能编造。注意用户问“星河知识库助手的年度营业收入是多少？” 我们不知道。应回复：无法从当前知识库确定，因为检索内容未提供相关财务数据或文档。不要用模型知识。可以请提供更多资料。简洁。\n</think>无法从当前知识库确定“星河知识库助手”的年度营业收入。当前检索内容中没有提供相关财务数据或文档依据。",
+      "references": [],
+      "elapsed_time": 3.27,
+      "message_id": "3257a10f-bcf3-42f6-abe3-a46703534b78",
+      "error_message": null
+    }
+  ],
+  "evaluation_results": [
+    {
+      "test_id": "TC001",
+      "answer_pass": false,
+      "citation_pass": false,
+      "evaluation_reason": "回答或检索证据未通过基础事实匹配",
+      "question": "星河知识库助手的项目负责人是谁？",
+      "scenario": "fact_qa",
+      "expected_facts": [
+        "林晓"
+      ],
+      "actual_answer": "无法从当前知识库确定“星河知识库助手”的项目负责人是谁。\n\n当前提供的检索内容为空，未包含与该问题相关的文档或原文片段。请补充相关检索结果或文档依据后再查询。",
+      "references": [],
+      "elapsed_time": 4.65,
+      "execution_status": "success",
+      "error_message": null,
+      "failure_type": "retrieval_failure"
+    },
+    {
+      "test_id": "TC002",
+      "answer_pass": false,
+      "citation_pass": false,
+      "evaluation_reason": "回答或检索证据未通过基础事实匹配",
+      "question": "星河知识库助手支持哪些文件格式？",
+      "scenario": "fact_qa",
+      "expected_facts": [
+        "PDF、TXT"
+      ],
+      "actual_answer": "当前知识库检索内容中没有提供关于“星河知识库助手支持哪些文件格式”的资料，因此无法从当前知识库确定答案。",
+      "references": [],
+      "elapsed_time": 4.57,
+      "execution_status": "success",
+      "error_message": null,
+      "failure_type": "retrieval_failure"
+    },
+    {
+      "test_id": "TC003",
+      "answer_pass": true,
+      "citation_pass": null,
+      "evaluation_reason": "检测到资料不足的说明，未检测到具体金额",
+      "question": "星河知识库助手的年度营业收入是多少？",
+      "scenario": "missing_information",
+      "expected_facts": [],
+      "actual_answer": "无法从当前知识库确定“星河知识库助手”的年度营业收入。当前检索内容中没有提供相关财务数据或文档依据。",
+      "references": [],
+      "elapsed_time": 3.27,
+      "execution_status": "success",
+      "error_message": null,
+      "failure_type": "none"
+    }
+  ]
+}
