@@ -1,0 +1,182 @@
+{
+  "protocol": "same_evidence_blind_review_v1",
+  "records": [
+    {
+      "pair_id": "dify_app_EV001_quick_lookup",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV001_quick_lookup",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV001_source_checker",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV001_source_checker",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV005_quick_lookup",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV005_quick_lookup",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV005_critical_reader",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV005_critical_reader",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV013_newcomer",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV013_newcomer",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV013_critical_reader",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV013_critical_reader",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV021_newcomer",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV021_newcomer",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "dify_app_EV021_source_checker",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    },
+    {
+      "pair_id": "coze_app_EV021_source_checker",
+      "frozen_evidence_path": "",
+      "gold_reviewer": "",
+      "gold_task": "not_reviewed",
+      "gold_source": "not_reviewed",
+      "assisted_reviewer": "",
+      "assisted_task": "not_reviewed",
+      "assisted_source": "not_reviewed",
+      "evidence_note": ""
+    }
+  ],
+  "note": "双方评价同一份冻结回答/截图。gold由独立复核者先标注，辅助结果封存后再比较；参考标签与辅助标签不可相互抄写。"
+}

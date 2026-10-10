@@ -1,0 +1,576 @@
+{
+  "suite_id": "expanded_business_24_v1",
+  "origin": "authored_synthetic",
+  "description": "24个原创模拟企业任务，6类场景；四种Persona、两套应用；不是真实客户调研或官方基准。",
+  "documents": [
+    {
+      "id": "EV01_service_overview.txt",
+      "path": "materials/EV01_service_overview.txt",
+      "remote_names": [
+        "EV01_service_overview.txt"
+      ]
+    },
+    {
+      "id": "EV02_access_workflow.txt",
+      "path": "materials/EV02_access_workflow.txt",
+      "remote_names": [
+        "EV02_access_workflow.txt"
+      ]
+    },
+    {
+      "id": "EV03_expense_v1.txt",
+      "path": "materials/EV03_expense_v1.txt",
+      "remote_names": [
+        "EV03_expense_v1.txt"
+      ]
+    },
+    {
+      "id": "EV04_expense_v2.txt",
+      "path": "materials/EV04_expense_v2.txt",
+      "remote_names": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV05_incident_support.txt",
+      "path": "materials/EV05_incident_support.txt",
+      "remote_names": [
+        "EV05_incident_support.txt"
+      ]
+    },
+    {
+      "id": "EV06_upload_quality.txt",
+      "path": "materials/EV06_upload_quality.txt",
+      "remote_names": [
+        "EV06_upload_quality.txt"
+      ]
+    },
+    {
+      "id": "EV07_pilot_acceptance.txt",
+      "path": "materials/EV07_pilot_acceptance.txt",
+      "remote_names": [
+        "EV07_pilot_acceptance.txt"
+      ]
+    },
+    {
+      "id": "EV08_internal_faq.txt",
+      "path": "materials/EV08_internal_faq.txt",
+      "remote_names": [
+        "EV08_internal_faq.txt"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "EV001",
+      "scenario": "事实与角色",
+      "question": "星桥知识助手试点负责人和技术支持联系人分别是谁？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt"
+      ]
+    },
+    {
+      "id": "EV002",
+      "scenario": "事实与边界",
+      "question": "星桥知识助手当前支持哪些文件格式，单个文件最大多大？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt"
+      ]
+    },
+    {
+      "id": "EV003",
+      "scenario": "事实与范围",
+      "question": "外包同事能直接加入星桥知识助手试点吗？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt"
+      ]
+    },
+    {
+      "id": "EV004",
+      "scenario": "跨文档汇总",
+      "question": "星桥知识助手试点负责人是谁，试点多少人，评审是哪天？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt",
+        "EV07_pilot_acceptance.txt"
+      ]
+    },
+    {
+      "id": "EV005",
+      "scenario": "版本与生效",
+      "question": "我2026年10月5日在杭州入住，发票550元且差旅已批准，每晚最多报销多少？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV006",
+      "scenario": "版本与生效",
+      "question": "我2026年9月28日入住杭州，实际支付500元，有有效发票，10月8日才报销，适用哪个上限？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV03_expense_v1.txt",
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV007",
+      "scenario": "跨版本计算",
+      "question": "我9月30日和10月1日在上海各住一晚，每晚500元，发票有效且差旅已批准，两晚一共能报多少？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV03_expense_v1.txt",
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV008",
+      "scenario": "条件不足",
+      "question": "2026年10月出差，我每晚花了520元，到底能报多少？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV009",
+      "scenario": "条件计算",
+      "question": "2026年10月在深圳住两晚，每晚550元，发票有效且差旅已批准，一共报销多少？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV010",
+      "scenario": "条件计算",
+      "question": "2026年10月在杭州住两晚，一晚300元、一晚600元，手续齐全，能用第一晚剩余额度补第二晚吗？总共能报多少？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV011",
+      "scenario": "缺失凭证",
+      "question": "2026年10月杭州住宿400元但没有发票，我能直接按450元上限报销吗？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV012",
+      "scenario": "条件计算",
+      "question": "2026年10月在上海住一晚，实际支付650元，发票有效且差旅已批准，最多报多少？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV04_expense_v2.txt"
+      ]
+    },
+    {
+      "id": "EV013",
+      "scenario": "申请流程",
+      "question": "我是刚入职的星桥员工，想开通知识助手试点，应该找谁，按什么顺序做，多久开通？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV02_access_workflow.txt"
+      ]
+    },
+    {
+      "id": "EV014",
+      "scenario": "术语与权限",
+      "question": "我不懂RBAC，看到“无权访问”时应该怎么处理？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV02_access_workflow.txt"
+      ]
+    },
+    {
+      "id": "EV015",
+      "scenario": "材料准备",
+      "question": "我有一份8MB的纯扫描PDF，里面有客户手机号，能直接上传吗？应该怎样准备？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt",
+        "EV06_upload_quality.txt"
+      ]
+    },
+    {
+      "id": "EV016",
+      "scenario": "材料准备",
+      "question": "我有一份12MB的文字PDF，内容已脱敏，该怎么上传？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt",
+        "EV06_upload_quality.txt"
+      ]
+    },
+    {
+      "id": "EV017",
+      "scenario": "异常响应",
+      "question": "全部试点用户突然无法登录，应该怎么处理，多久能有人响应？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV05_incident_support.txt"
+      ]
+    },
+    {
+      "id": "EV018",
+      "scenario": "异常响应",
+      "question": "只有一个文档解析失败，其他功能正常，我应该提交什么信息，响应目标是什么？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV05_incident_support.txt"
+      ]
+    },
+    {
+      "id": "EV019",
+      "scenario": "概念边界",
+      "question": "P1首次响应目标30分钟，是不是意味着30分钟一定修好？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV05_incident_support.txt"
+      ]
+    },
+    {
+      "id": "EV020",
+      "scenario": "授权与检索",
+      "question": "同事已经上传了文件，我是不是就一定能查到？如果查不到该检查什么？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV08_internal_faq.txt",
+        "EV02_access_workflow.txt"
+      ]
+    },
+    {
+      "id": "EV021",
+      "scenario": "缺失信息",
+      "question": "星桥知识助手正式商用价格、年度收入和正式上线日期分别是什么？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt"
+      ]
+    },
+    {
+      "id": "EV022",
+      "scenario": "错误前提",
+      "question": "听说星桥知识助手会自动OCR，也支持DOCX。能直接把扫描合同传进去吗？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV01_service_overview.txt",
+        "EV06_upload_quality.txt"
+      ]
+    },
+    {
+      "id": "EV023",
+      "scenario": "验收约束",
+      "question": "假设试点评审20题有18题完成，但其中出现一次关键来源归属错误，能通过验收吗？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV07_pilot_acceptance.txt"
+      ]
+    },
+    {
+      "id": "EV024",
+      "scenario": "跨条件综合",
+      "question": "假设20题有19题完成、没有关键来源归属错误，是不是助手就可以直接宣布全量上线？",
+      "personas": [
+        "quick_lookup",
+        "source_checker",
+        "newcomer",
+        "critical_reader"
+      ],
+      "kind": "expanded_business",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "EV07_pilot_acceptance.txt"
+      ]
+    }
+  ]
+}

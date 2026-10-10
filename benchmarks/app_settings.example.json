@@ -1,0 +1,28 @@
+{
+  "products": {
+    "dify_app": {
+      "name": "Dify 自建知识库助手",
+      "url": "https://example.com/REPLACE_WITH_DIFY_APP_URL",
+      "settings": {
+        "model": "请记录实际配置；无法确认时填unknown",
+        "retrieval": "请记录实际配置；无法确认时填unknown",
+        "source_display": "请记录实际配置；无法确认时填unknown",
+        "prompt_version": "请记录实际配置；无法确认时填unknown",
+        "knowledge_scope": "请记录实际配置；无法确认时填unknown"
+      },
+      "material_confirmed": false
+    },
+    "coze_app": {
+      "name": "Coze 自建知识库助手",
+      "url": "https://example.com/REPLACE_WITH_COZE_APP_URL",
+      "settings": {
+        "model": "请记录实际配置；无法确认时填unknown",
+        "retrieval": "请记录实际配置；无法确认时填unknown",
+        "source_display": "请记录实际配置；无法确认时填unknown",
+        "prompt_version": "请记录实际配置；无法确认时填unknown",
+        "knowledge_scope": "请记录实际配置；无法确认时填unknown"
+      },
+      "material_confirmed": false
+    }
+  }
+}

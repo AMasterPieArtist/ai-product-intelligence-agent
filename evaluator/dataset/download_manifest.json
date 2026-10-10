@@ -1,0 +1,23 @@
+{
+  "dataset": "DuReader-robust",
+  "split": "dev",
+  "downloaded_at": "2026-10-04T12:03:24.932422+00:00",
+  "download_url": "https://dataset-bj.cdn.bcebos.com/dureader_robust/data/dureader_robust-data.tar.gz",
+  "download_url_source": "Official repository DuReader-Robust/download.sh",
+  "archive_bytes": 7249488,
+  "archive_sha256": "058e5320f762aaeff6b39008c412a83e0d1f66845f38f930c5cf104564a51b2d",
+  "dev_sha256": "eda029d96334a413a5b58d003b318cb84a8a81ce09280de7f9ea82b1c4999006",
+  "dev_question_count": 1417,
+  "selected_question_ids": [
+    "ab1ac6c50cb4f46720b62ec66753d1f9",
+    "180af20263c8c4c3484bb8e3dc93e160",
+    "ef4a8d4f9f1e77bcac606907c4e8460c",
+    "b8581beaa3e0cf3d4f813b7b0062709f",
+    "bfd8aed0d52c1f0c4f08df301c49f56f"
+  ],
+  "license_file": "raw/License.docx",
+  "license_note": "Dataset archive contains Participant Agreement limiting dataset use to non-commercial research or teaching. Official repository Apache-2.0 statement does not replace dataset terms.",
+  "official_archive_md5": "020b26396f1b5932e451dba84d0b3dc8",
+  "official_md5_source": "https://raw.githubusercontent.com/baidu/DuReader/master/DuReader-Robust/md5.txt",
+  "official_md5_check": "passed"
+}

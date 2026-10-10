@@ -1,0 +1,36 @@
+{
+  "quick_lookup": {
+    "name": "快速查询用户",
+    "goal": "尽快获得可行动答案",
+    "max_followups": 0,
+    "actions": [],
+    "behavior": "阅读首答后结束；结束执行不表示答案正确。"
+  },
+  "source_checker": {
+    "name": "资料核查用户",
+    "goal": "获取可追溯的文档名称与原文",
+    "max_followups": 1,
+    "actions": [
+      "ask_source"
+    ],
+    "behavior": "仅在缺少文档名称或原文引述时追问来源，不能因出现文件名就声称真实。"
+  },
+  "newcomer": {
+    "name": "不熟悉业务的新员工",
+    "goal": "理解术语并知道下一步怎么做",
+    "max_followups": 1,
+    "actions": [
+      "ask_clarify"
+    ],
+    "behavior": "首答包含未解释术语或步骤不明确时要求通俗说明；已经清楚则结束。"
+  },
+  "critical_reader": {
+    "name": "谨慎的业务审核人",
+    "goal": "发现版本冲突、条件遗漏和证据不足",
+    "max_followups": 1,
+    "actions": [
+      "challenge"
+    ],
+    "behavior": "根据题目和实际回复检查是否遗漏日期、版本、适用条件；缺失时要求核对，不凭空怀疑每个回答。"
+  }
+}

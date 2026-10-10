@@ -1,0 +1,85 @@
+{
+  "suite_id": "existing_kb_smoke",
+  "origin": "existing_user_material",
+  "description": "沿用用户已有PDF/TXT；S02、S03参考既有用例，运行前仍需核对原文。",
+  "documents": [
+    {
+      "id": "sample_knowledge",
+      "path": null,
+      "remote_names": [
+        "sample_knowledge.pdf",
+        "sample_knowledge.txt"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S01",
+      "scenario": "负责人查询",
+      "question": "星河知识库助手的项目负责人是谁？",
+      "personas": [
+        "quick_lookup",
+        "source_checker"
+      ],
+      "kind": "fact",
+      "requires_human_review": false,
+      "oracle": {
+        "required_groups": [
+          [
+            "林晓"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "sample_knowledge"
+      ]
+    },
+    {
+      "id": "S02",
+      "scenario": "功能范围",
+      "question": "星河知识库助手支持哪些文件格式？",
+      "personas": [
+        "quick_lookup"
+      ],
+      "kind": "fact",
+      "requires_human_review": false,
+      "oracle": {
+        "required_groups": [
+          [
+            "PDF",
+            "pdf"
+          ],
+          [
+            "TXT",
+            "txt"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "sample_knowledge"
+      ]
+    },
+    {
+      "id": "S03",
+      "scenario": "资料缺失",
+      "question": "星河知识库助手项目的年度营业收入是多少？",
+      "personas": [
+        "quick_lookup"
+      ],
+      "kind": "missing",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": true
+      },
+      "reference_document_ids": [
+        "sample_knowledge"
+      ]
+    }
+  ]
+}

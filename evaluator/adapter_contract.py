@@ -1,0 +1,16 @@
+"""Minimal structural contract for the current DOM-based browser runners."""
+from typing import Protocol, Any
+class BrowserAdapter(Protocol):
+    editor: Any
+    questions: Any
+    answers: Any
+    async def begin(self, question: str, index: int): ...
+    async def observe(self) -> dict: ...
+    async def execute(self, action: str) -> dict: ...
+    async def snapshot(self, label: str) -> dict: ...
+    def end(self): ...
+def validate_adapter(adapter):
+    required_methods=('begin','observe','execute','snapshot','end')
+    missing=[name for name in required_methods if not callable(getattr(adapter,name,None))]
+    missing += [name for name in ('editor','questions','answers') if getattr(adapter,name,None) is None]
+    if missing: raise TypeError('Adapter接口缺少：'+', '.join(missing))

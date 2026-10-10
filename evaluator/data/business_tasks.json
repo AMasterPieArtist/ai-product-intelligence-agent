@@ -1,0 +1,350 @@
+{
+  "suite_id": "business_fixture_v1",
+  "origin": "authored_synthetic",
+  "description": "员工自助知识查询与试点选型；模拟业务材料，仅可说明这组受控场景。",
+  "documents": [
+    {
+      "id": "project_overview.txt",
+      "path": "materials/project_overview.txt",
+      "remote_names": [
+        "project_overview.txt"
+      ]
+    },
+    {
+      "id": "pilot_plan.txt",
+      "path": "materials/pilot_plan.txt",
+      "remote_names": [
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "expense_policy_old.txt",
+      "path": "materials/expense_policy_old.txt",
+      "remote_names": [
+        "expense_policy_old.txt"
+      ]
+    },
+    {
+      "id": "expense_policy_current.txt",
+      "path": "materials/expense_policy_current.txt",
+      "remote_names": [
+        "expense_policy_current.txt"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "B01",
+      "scenario": "快速事实查询",
+      "question": "星河知识库助手项目负责人是谁？",
+      "personas": [
+        "quick_lookup",
+        "source_checker"
+      ],
+      "kind": "fact",
+      "requires_human_review": false,
+      "oracle": {
+        "required_groups": [
+          [
+            "林晓"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "project_overview.txt"
+      ]
+    },
+    {
+      "id": "B02",
+      "scenario": "能力边界",
+      "question": "这个助手支持哪些上传格式？",
+      "personas": [
+        "quick_lookup"
+      ],
+      "kind": "fact",
+      "requires_human_review": false,
+      "oracle": {
+        "required_groups": [
+          [
+            "PDF",
+            "pdf"
+          ],
+          [
+            "TXT",
+            "txt"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "project_overview.txt"
+      ]
+    },
+    {
+      "id": "B03",
+      "scenario": "来源追溯",
+      "question": "试点评审会在哪天？请给出依据。",
+      "personas": [
+        "source_checker"
+      ],
+      "kind": "fact",
+      "requires_human_review": false,
+      "oracle": {
+        "required_groups": [
+          [
+            "2026-10-10",
+            "2026年10月10日",
+            "10月10日"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "project_overview.txt",
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "B04",
+      "scenario": "缺失信息",
+      "question": "星河知识库助手的年度营业收入是多少？",
+      "personas": [
+        "quick_lookup"
+      ],
+      "kind": "missing",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [],
+        "forbidden_phrases": [],
+        "expect_uncertainty": true
+      },
+      "reference_document_ids": [
+        "project_overview.txt",
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "B05",
+      "scenario": "版本冲突",
+      "question": "资料里住宿上限有300元和400元，现在去普通城市应该按哪个上限？请解释版本依据。",
+      "personas": [
+        "critical_reader",
+        "source_checker"
+      ],
+      "kind": "version",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "400"
+          ],
+          [
+            "V2",
+            "v2",
+            "2026-09-01",
+            "9月1日"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "expense_policy_old.txt",
+        "expense_policy_current.txt"
+      ]
+    },
+    {
+      "id": "B06",
+      "scenario": "条件计算",
+      "question": "当前去上海出差，每晚实际住宿550元，每晚可以报销多少？",
+      "personas": [
+        "quick_lookup"
+      ],
+      "kind": "reasoning",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "550"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "expense_policy_current.txt"
+      ]
+    },
+    {
+      "id": "B07",
+      "scenario": "条件计算",
+      "question": "当前去杭州出差，每晚实际住宿550元，每晚最多可以报销多少？",
+      "personas": [
+        "critical_reader"
+      ],
+      "kind": "reasoning",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "400"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "expense_policy_current.txt"
+      ]
+    },
+    {
+      "id": "B08",
+      "scenario": "新员工操作",
+      "question": "我刚入职，想申请试用星河助手，需要找谁，按什么顺序做？",
+      "personas": [
+        "newcomer"
+      ],
+      "kind": "workflow",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "林晓"
+          ],
+          [
+            "赵宁"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "project_overview.txt",
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "B09",
+      "scenario": "限制提醒",
+      "question": "我要把未脱敏客户合同上传参加试点，可以吗？为什么？",
+      "personas": [
+        "critical_reader"
+      ],
+      "kind": "fact",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "不允许",
+            "不能",
+            "不可以",
+            "禁止"
+          ],
+          [
+            "脱敏"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "B10",
+      "scenario": "能力边界",
+      "question": "试点阶段能直接处理扫描件吗？不能的话怎么办？",
+      "personas": [
+        "newcomer"
+      ],
+      "kind": "fact",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "不支持",
+            "不能",
+            "不可以"
+          ],
+          [
+            "文本"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "project_overview.txt",
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "B11",
+      "scenario": "跨文档汇总",
+      "question": "请汇总项目负责人、试点人数和试点评审日期，并注明各项来自哪份文档。",
+      "personas": [
+        "source_checker"
+      ],
+      "kind": "synthesis",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "林晓"
+          ],
+          [
+            "20"
+          ],
+          [
+            "2026-10-10",
+            "10月10日"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "project_overview.txt",
+        "pilot_plan.txt"
+      ]
+    },
+    {
+      "id": "B12",
+      "scenario": "术语与操作解释",
+      "question": "我不理解脱敏，参加这个试点时我应该怎样准备上传资料？",
+      "personas": [
+        "newcomer"
+      ],
+      "kind": "explanation",
+      "requires_human_review": true,
+      "oracle": {
+        "required_groups": [
+          [
+            "客户",
+            "个人",
+            "敏感"
+          ],
+          [
+            "去除",
+            "删除",
+            "隐藏",
+            "遮盖",
+            "替换",
+            "公开",
+            "脱敏"
+          ]
+        ],
+        "forbidden_phrases": [],
+        "expect_uncertainty": false
+      },
+      "reference_document_ids": [
+        "pilot_plan.txt"
+      ]
+    }
+  ]
+}

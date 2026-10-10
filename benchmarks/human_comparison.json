@@ -1,0 +1,378 @@
+{
+  "protocol": "workflow_comparison_v1",
+  "records": [
+    {
+      "pair_id": "dify_app_EV001_quick_lookup",
+      "product": "dify_app",
+      "task_id": "EV001",
+      "persona": "quick_lookup",
+      "question": "星桥知识助手试点负责人和技术支持联系人分别是谁？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV001_quick_lookup",
+      "product": "coze_app",
+      "task_id": "EV001",
+      "persona": "quick_lookup",
+      "question": "星桥知识助手试点负责人和技术支持联系人分别是谁？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV001_source_checker",
+      "product": "dify_app",
+      "task_id": "EV001",
+      "persona": "source_checker",
+      "question": "星桥知识助手试点负责人和技术支持联系人分别是谁？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV001_source_checker",
+      "product": "coze_app",
+      "task_id": "EV001",
+      "persona": "source_checker",
+      "question": "星桥知识助手试点负责人和技术支持联系人分别是谁？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV005_quick_lookup",
+      "product": "dify_app",
+      "task_id": "EV005",
+      "persona": "quick_lookup",
+      "question": "我2026年10月5日在杭州入住，发票550元且差旅已批准，每晚最多报销多少？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV005_quick_lookup",
+      "product": "coze_app",
+      "task_id": "EV005",
+      "persona": "quick_lookup",
+      "question": "我2026年10月5日在杭州入住，发票550元且差旅已批准，每晚最多报销多少？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV005_critical_reader",
+      "product": "dify_app",
+      "task_id": "EV005",
+      "persona": "critical_reader",
+      "question": "我2026年10月5日在杭州入住，发票550元且差旅已批准，每晚最多报销多少？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV005_critical_reader",
+      "product": "coze_app",
+      "task_id": "EV005",
+      "persona": "critical_reader",
+      "question": "我2026年10月5日在杭州入住，发票550元且差旅已批准，每晚最多报销多少？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV013_newcomer",
+      "product": "dify_app",
+      "task_id": "EV013",
+      "persona": "newcomer",
+      "question": "我是刚入职的星桥员工，想开通知识助手试点，应该找谁，按什么顺序做，多久开通？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV013_newcomer",
+      "product": "coze_app",
+      "task_id": "EV013",
+      "persona": "newcomer",
+      "question": "我是刚入职的星桥员工，想开通知识助手试点，应该找谁，按什么顺序做，多久开通？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV013_critical_reader",
+      "product": "dify_app",
+      "task_id": "EV013",
+      "persona": "critical_reader",
+      "question": "我是刚入职的星桥员工，想开通知识助手试点，应该找谁，按什么顺序做，多久开通？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV013_critical_reader",
+      "product": "coze_app",
+      "task_id": "EV013",
+      "persona": "critical_reader",
+      "question": "我是刚入职的星桥员工，想开通知识助手试点，应该找谁，按什么顺序做，多久开通？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV021_newcomer",
+      "product": "dify_app",
+      "task_id": "EV021",
+      "persona": "newcomer",
+      "question": "星桥知识助手正式商用价格、年度收入和正式上线日期分别是什么？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV021_newcomer",
+      "product": "coze_app",
+      "task_id": "EV021",
+      "persona": "newcomer",
+      "question": "星桥知识助手正式商用价格、年度收入和正式上线日期分别是什么？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "dify_app_EV021_source_checker",
+      "product": "dify_app",
+      "task_id": "EV021",
+      "persona": "source_checker",
+      "question": "星桥知识助手正式商用价格、年度收入和正式上线日期分别是什么？",
+      "order": "agent_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    },
+    {
+      "pair_id": "coze_app_EV021_source_checker",
+      "product": "coze_app",
+      "task_id": "EV021",
+      "persona": "source_checker",
+      "question": "星桥知识助手正式商用价格、年度收入和正式上线日期分别是什么？",
+      "order": "human_first",
+      "human": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "agent": {
+        "status": "not_started",
+        "active_seconds": null,
+        "elapsed_seconds": null,
+        "evidence_path": "",
+        "reviewer": ""
+      },
+      "note": ""
+    }
+  ],
+  "one_time_setup": {
+    "human_seconds": null,
+    "agent_seconds": null
+  },
+  "note": "先锁定协议并记录计时；active_seconds包含执行操作、干预、复核和报告整理。不包含纯等待；elapsed_seconds包含等待。"
+}
